@@ -1,47 +1,56 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
   title: Dashy
   description: Welcome to your new dashboard!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: material
+  language: en
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Pooger
+    icon: fas fa-rocket
+    items:
+      - &ref_0
+        title: Pooger landing page
+        description: Development a project management links for Dashy
+        icon: https://pooger.epitech.musubi.dev/assets/LOGO_Pooger-0b18b857.svg
+        url: https://pooger.epitech.musubi.dev/
+        target: newtab
+      - &ref_1
+        title: GitHub Epitech
+        description: Source Code, Issues and Pull Requests
+        url: https://github.com/EpitechMscProPromo2025/T-POO-700-LIL_5
+        icon: favicon
+      - &ref_2
+        title: Docs
+        description: Configuring & Usage Documentation
+        icon: far fa-book
+        url: https://docs.musubi.dev/docs/Epitech/Pooger/User%20documentation/
+      - &ref_3
+        title: Portainer
+        description: Deployment gestion
+        url: https://portainer.musubi.dev/#!/2/docker/containers
+        icon: >-
+          https://developer.asustor.com/uploadIcons/0020_999_1639454569_Portainer_ce_256.png
+      - &ref_4
+        title: Traefik
+        description: Gestion routing
+        url: https://traefik.musubi.dev/dashboard/#/
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Traefik.logo.png/1200px-Traefik.logo.png
+      - &ref_5
+        title: Infisical
+        description: Gestin secret
+        url: >-
+          https://infisical.musubi.dev/project/65437ae5a6352436f42faa35/secrets/overview
+        icon: https://blog.stephane-robert.info/img/logo-infisical.png
+    filteredItems:
+      - *ref_0
+      - *ref_1
+      - *ref_2
+      - *ref_3
+      - *ref_4
+      - *ref_5
